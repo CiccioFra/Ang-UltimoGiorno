@@ -4,11 +4,13 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BootstrapFormComponent } from './components/bootstrap-form/bootstrap-form.component';
+import { ListComponent } from './components/list/list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    BootstrapFormComponent
+    BootstrapFormComponent,
+    ListComponent
   ],
   imports: [
     BrowserModule,
