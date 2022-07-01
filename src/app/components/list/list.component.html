@@ -2,10 +2,11 @@
 <div class="container my-3">
     <div class="mb-3">
         <label for="search" class="form-label">Ricerca</label>
-        <input type="text" class="form-control" name="" id="search">
+        <input type="text" class="form-control" name="" id="search" [(ngModel)]="text">
     </div>
 
     <ul class="list-group">
-        <li class="list-group-item" *ngFor="let student of students">{{ student.firstname }} {{ student.lastname }}</li>
+       <!-- <li class="list-group-item" *ngFor="let student of students">{{ student.firstname }} {{ student.lastname }}</li>-->
+       <li class="list-group-item" *ngFor="let student of (students | search : text)">{{ student.firstname }} {{ student.lastname }}</li>
     </ul>
 </div>

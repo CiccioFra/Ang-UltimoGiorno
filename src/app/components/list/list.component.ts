@@ -20,9 +20,17 @@ export class ListComponent implements OnInit {
     { firstname: 'Marco', lastname: 'Polo'},
   ];
 
+  filteredStudents = this.students;
+
+  text = '';
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  search() {
+    //this.filteredStudents = this.students.filter(x => x.firstname.toLowerCase().includes())
   }
 
 }
